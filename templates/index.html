@@ -1,20 +1,22 @@
 <!-- this is the club overveiw page -->
 <!DOCTYPE html>
+{% extends 'base.html' %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Make - Clubs </title>
+    {% block head %}
+    {% endblock %}
+    {% block title %}<title>Make - Clubs</title>{% endblock %}
 </head>
-<body>
+{% block body %}
+{% endblock %}
+<content>
+{% block content %}
     <container>
         <!-- this is where the tabs title will be-->
         <h1>hello from tab title</h1>
         <!--this is where the list of clubs will be-->
         <ul>
-            <!-- be sure to look at the real club list as 
-            to not forget anyone -->
+            <!-- be sure to look at the real club list as to not forget anyone -->
             <li>Hello from club name</li>
             <li>Hello from club logo</li>
             <li>Hello from club name</li>
@@ -25,5 +27,8 @@
             <li>Hello from club logo</li>
         </ul>
     </container>
-</body>
+{% endblock %}
+</content>
+{% block footer %}
+{% endblock %}
 </html>

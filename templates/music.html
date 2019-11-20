@@ -1,17 +1,15 @@
 <!-- This is the music club page -->
-<!DOCTYPE html>
+{% extends 'base.html' %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Make - Music Club</title>
-    <!-- Make Schools navbar -->
-    <nav>
-        <p>Hello from schools navbar!</p>
-    </nav>
+    {% block head %}
+    {% endblock %}
+    {% block title %}<title>Make - Music Club</title>{% endblock %}
 </head>
-<body>
+{% block body %}
+{% endblock %}
+<container>
+{% block container %}
     <!-- our banner and link to quick join -->
     <h1>
         Hello from Join the band jumbotron!
@@ -33,9 +31,8 @@
     <h2>Hello from Support!</h2>
     <p>this is where information will go about why we need support!</p>
     <p><a href>Click here to donate!</a></p>
-</body>
-<footer>
-    <!-- Make Schools footer -->
-    <p>hello from schools footer!</p>
-</footer>
+{% endblock %}
+</container>
+{% block footer %}
+{% endblock %}
 </html>

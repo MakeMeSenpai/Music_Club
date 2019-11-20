@@ -1,0 +1,27 @@
+<!--our Parent template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% endblock %}
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    <nav>
+    <h1>Hello from make school navbar</h1>
+    </nav>
+    {% endblock %}
+    {% block content %} 
+    {% endblock %}
+</body>
+{% block footer %}
+<footer>
+    <h1>hello from make school footer</h1>
+</footer>
+{% endblock %}
+</html>
