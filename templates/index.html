@@ -1,22 +1,21 @@
-<!-- this is the club overveiw page -->
+{# <!-- this is the club overveiw page --> #}
+{# <!--all children must extend from parent--> #}
 <!DOCTYPE html>
 {% extends 'base.html' %}
 <html lang="en">
 <head>
-    {% block head %}
-    {% endblock %}
+    {# <!--defines our child's block title-->  #}
     {% block title %}<title>Make - Clubs</title>{% endblock %}
 </head>
-{% block body %}
-{% endblock %}
 <content>
+{# <!--defines our childs block content--> #}
 {% block content %}
     <container>
-        <!-- this is where the tabs title will be-->
+        {# <!-- this is where the tabs title will be--> #}
         <h1>hello from tab title</h1>
-        <!--this is where the list of clubs will be-->
+        {# <!--this is where the list of clubs will be--> #}
         <ul>
-            <!-- be sure to look at the real club list as to not forget anyone -->
+            {# <!-- be sure to look at the real club list as to not forget anyone --> #}
             <li>Hello from club name</li>
             <li>Hello from club logo</li>
             <li>Hello from club name</li>
@@ -29,6 +28,4 @@
     </container>
 {% endblock %}
 </content>
-{% block footer %}
-{% endblock %}
 </html>

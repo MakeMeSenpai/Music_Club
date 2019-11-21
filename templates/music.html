@@ -1,38 +1,35 @@
-<!-- This is the music club page -->
+{# <!-- This is the music club page --> #}
+{# <!--all children must extend from parent--> #}
 {% extends 'base.html' %}
 <html lang="en">
 <head>
-    {% block head %}
-    {% endblock %}
+    {# <!--defines our child's block title--> #}
     {% block title %}<title>Make - Music Club</title>{% endblock %}
 </head>
-{% block body %}
-{% endblock %}
 <container>
-{% block container %}
-    <!-- our banner and link to quick join -->
+{# <!--defines child's block content--> #}
+{% block content %}
+    {# <!-- our banner and link to quick join --> #}
     <h1>
         Hello from Join the band jumbotron!
     </h1>
-    <!--our navbar-->
+    {# <!--our navbar--> #}
     <nav>
         <p>Hello from our navbar!</p>
     </nav>
-    <!-- About/ History of our club -->
+    {# <!-- About/ History of our club --> #}
     <h2>Hello from About!</h2>
     <p>this is where information about us will go!</p>
     <hr>
-    <!-- Upcomming Events -->
+    {# <!-- Upcomming Events --> #}
     <h2>Hello from Events!</h2>
     <p>this is where info about events will go!</p>
     <p>this is where a calander will go showing upcomming events!</p>
     <hr>
-    <!-- Support -->
+    {# <!-- Support --> #}
     <h2>Hello from Support!</h2>
     <p>this is where information will go about why we need support!</p>
     <p><a href>Click here to donate!</a></p>
 {% endblock %}
 </container>
-{% block footer %}
-{% endblock %}
 </html>

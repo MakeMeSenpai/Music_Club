@@ -1,24 +1,29 @@
-<!--our Parent template -->
+{# <!--our Parent template - all child templates are based off it's parent--> #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {# <!--defines our block head--> #}
     {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% endblock %}
+    {# <!--places children's titles here--> #}
     {% block title %}
     {% endblock %}
 </head>
 <body>
+    {# <!--defines our block body--> #}
     {% block body %}
     <nav>
     <h1>Hello from make school navbar</h1>
     </nav>
     {% endblock %}
+    {# <!--places children's body here--> #}
     {% block content %} 
     {% endblock %}
 </body>
+{# <!--defines our block footer--> #}
 {% block footer %}
 <footer>
     <h1>hello from make school footer</h1>
