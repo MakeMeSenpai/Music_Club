@@ -1,4 +1,6 @@
 /* All the decorations! */
+
+/*base.html*/
 #maketop{
     color: white;
     background: #312f2f;
@@ -7,10 +9,35 @@
     width: 100%;
     z-index: 2;
 }
+a:link{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.container{
+    width: auto;
+    max-height: 75px;
+    overflow-y: hidden;
+}
 #makelogo{
     max-width: 169px;
-    max-height: auto;
-    padding: 18px;
+    max-height: 70px;
+}
+.col{
+    width: auto;
+    max-height: 70px;
+    margin-top: 7.5px;
+}
+#BaSA{
+    min-width: 450px;
+}
+#navspace{
+    min-width: 100px;
+}
+#RI{
+    min-width: 175px;
 }
 #makebottom{
     color: white;

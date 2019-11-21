@@ -19,10 +19,15 @@
     {# <!--defines our block body--> #}
     {% block body %}
     <nav id="maketop" class="fixed-top">
-        <img id="makelogo" src="https://techjobstour.com/wp-content/uploads/2017/05/MakeSchool_Logo_Hrz_CMYK_cropped.png">
-        <h2><a href="#">Bacherlor in Applied Computer Science</a></h2>
-        <h2><a href="#">Explore</a></h2>
-        <button class="primary-button"><a herf="">Apply</a></button>
+        <div class="container row">
+            <a href=""><img id="makelogo" class="col" src="https://techjobstour.com/wp-content/uploads/2017/05/MakeSchool_Logo_Hrz_CMYK_cropped.png"></a>
+            <h4 id="BaSA" class="col"><a href="#">Bachelor in Applied Computer Science</a></h4>
+            <h4 class="col"><a href="#">Explore</a></h4>
+            <div id="navspace" class="col"></div>
+            <h4 id="RI" class="col"><a href="#">Request Info</a></h4>
+            <h4 class="col"><a href="#">Visit</a></h4>
+            <button class="primary-button col"><a herf="">Apply</a></button>
+        </div>
     </nav>
     {% endblock %}
     {# <!--places children's body here--> #}
@@ -31,7 +36,7 @@
 </body>
 {# <!--defines our block footer--> #}
 {% block footer %}
-<footer id="makebottom" class="fixed-bottom">
+<footer id="makebottom">
     <h1>hello from make school footer</h1>
 </footer>
 {% endblock %}
