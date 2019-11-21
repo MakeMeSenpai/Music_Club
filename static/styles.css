@@ -1,1 +1,22 @@
 /* All the decorations! */
+#maketop{
+    color: white;
+    background: #312f2f;
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    z-index: 2;
+}
+#makelogo{
+    max-width: 169px;
+    max-height: auto;
+    padding: 18px;
+}
+#makebottom{
+    color: white;
+    background: #312f2f;
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 2;
+}

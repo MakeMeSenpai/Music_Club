@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     {% endblock %}
@@ -18,8 +18,11 @@
 <body>
     {# <!--defines our block body--> #}
     {% block body %}
-    <nav>
-    <h1>Hello from make school navbar</h1>
+    <nav id="maketop" class="fixed-top">
+        <img id="makelogo" src="https://techjobstour.com/wp-content/uploads/2017/05/MakeSchool_Logo_Hrz_CMYK_cropped.png">
+        <h2><a href="#">Bacherlor in Applied Computer Science</a></h2>
+        <h2><a href="#">Explore</a></h2>
+        <button class="primary-button"><a herf="">Apply</a></button>
     </nav>
     {% endblock %}
     {# <!--places children's body here--> #}
@@ -28,7 +31,7 @@
 </body>
 {# <!--defines our block footer--> #}
 {% block footer %}
-<footer>
+<footer id="makebottom" class="fixed-bottom">
     <h1>hello from make school footer</h1>
 </footer>
 {% endblock %}
