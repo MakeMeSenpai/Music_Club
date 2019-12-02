@@ -19,14 +19,14 @@
     {# <!--defines our block body--> #}
     {% block body %}
     <nav id="maketop" class="fixed-top">
-        <div class="container row">
-            <a href=""><img id="makelogo" class="col" src="https://techjobstour.com/wp-content/uploads/2017/05/MakeSchool_Logo_Hrz_CMYK_cropped.png"></a>
-            <h4 id="BaSA" class="col"><a href="#">Bachelor in Applied Computer Science</a></h4>
-            <h4 class="col"><a href="#">Explore</a></h4>
-            <div id="navspace" class="col"></div>
-            <h4 id="RI" class="col"><a href="#">Request Info</a></h4>
-            <h4 class="col"><a href="#">Visit</a></h4>
-            <button class="primary-button col"><a herf="">Apply</a></button>
+        <div class="nav">
+            <a href=""><img id="makelogo" class="nav-link" src="https://techjobstour.com/wp-content/uploads/2017/05/MakeSchool_Logo_Hrz_CMYK_cropped.png"></a>
+            <h4 id="BaSA" class="nav-link"><a href="#">Bachelor in Applied Computer Science</a></h4>
+            <h4 class="nav-link"><a href="#">Explore</a></h4>
+            <div id="navspace" class="nav-link"></div>
+            <h4 id="RI" class="nav-link"><a href="#">Request Info |</a></h4>
+            <h4 id="visit" class="nav-link"><a href="#">Visit |</a></h4>
+            <button id="apply" class="nav-link"><a herf="#">Apply</a></button>
         </div>
     </nav>
     {% endblock %}
@@ -37,7 +37,36 @@
 {# <!--defines our block footer--> #}
 {% block footer %}
 <footer id="makebottom">
-    <h1>hello from make school footer</h1>
+    <div class="container">
+        <div class="container1">
+            <h4 class="nav-link"><a href="#">BACHELOR IN APPLIED CS</a></h4>
+            <h4 class="nav-link"><a href="#">ONLINE COURSES</a></h4>
+            <h4 class="nav-link"><a href="#">ABOUT</a></h4>
+            <h4 class="nav-link"><a href="#">PRESS</a></h4>
+            <h4 class="nav-link"><a href="#">EMPLOYERS</a></h4>
+            <h4 class="nav-link"><a href="#">BLOG</a></h4>
+            <h4 class="nav-link"><a href="#">CAREERS</a></h4>
+            <h4 class="nav-link"><a href="#">EMAIL US</a></h4>
+            <h4 class="nav-link"><a href="#">STUDENT LOG IN</a></h4>
+        </div>
+        <div class="container2">
+            <a href="#"><img class="f-logo" src="http://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png"></a>
+            <a href="#"><img class="f-logo" src="http://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png"></a>
+            <a href="#"><img class="f-logo" src="http://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png"></a>
+            <a href="#"><img class="f-logo" src="http://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png"></a>
+        </div>
+        <hr id="f-hr">
+        <div class="conatiner3">
+            <p>©2019 Make School. All Rights Reserved.</p>
+            <p>Code of Conduct | Privacy | Term of Service</p>
+        </div>
+        <div class="container4">
+            <small>
+            <p>The Bachelors in Applied Computer Science program is offered by the Dominican 
+            University of California through an <a href>incubation partnership</a> with Make School PBC.</p>
+            </small>
+        </div>
+    </div>
 </footer>
 {% endblock %}
 </html>

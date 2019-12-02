@@ -16,11 +16,6 @@ a:hover{
     color: white;
     text-decoration: underline;
 }
-.container{
-    width: auto;
-    max-height: 75px;
-    overflow-y: hidden;
-}
 #makelogo{
     max-width: 169px;
     max-height: 70px;
@@ -34,10 +29,18 @@ a:hover{
     min-width: 450px;
 }
 #navspace{
-    min-width: 100px;
+    min-width: 350px;
 }
 #RI{
     min-width: 175px;
+}
+#visit{
+    min-width: 100px;
+}
+#apply{
+    max-width: 150px;
+    color: white;
+    background: blue;
 }
 #makebottom{
     color: white;
@@ -46,4 +49,25 @@ a:hover{
     margin-bottom: 0;
     width: 100%;
     z-index: 2;
+}
+.container{
+    margin: auto;
+}
+.container1{
+    max-width: 350px;
+    max-height: 125px;
+}
+.conatiner2{
+    max-width: 350px;
+    max-height: 125px;
+    margin-top: -350px;
+    margin
+}
+.f-logo{
+    max-width: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#f-hr{
+    border-color: white;
 }
