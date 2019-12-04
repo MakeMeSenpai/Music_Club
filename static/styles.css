@@ -9,9 +9,6 @@
     width: 100%;
     z-index: 2;
 }
-a:link{
-    color: white;
-}
 a:hover{
     color: white;
     text-decoration: underline;
@@ -48,7 +45,7 @@ a:hover{
     position: absolute;
     margin-bottom: 0;
     width: 100%;
-    z-index: 2;
+    overflow-y: hidden;
 }
 .container{
     margin: auto;
@@ -57,12 +54,6 @@ a:hover{
     max-width: 350px;
     max-height: 125px;
 }
-.conatiner2{
-    max-width: 350px;
-    max-height: 125px;
-    margin-top: -350px;
-    margin
-}
 .f-logo{
     max-width: 32px;
     margin-left: 5px;
@@ -70,4 +61,23 @@ a:hover{
 }
 #f-hr{
     border-color: white;
+}
+
+/*Music Club styles*/
+.jumbotron{
+    background-image: url(https://data.arab48.com/data/news/2018/11/26/20181208021956.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-emphasis-color: black;
+}
+
+#logo{
+    max-width: auto;
+    max-height: 75px;
+    margin-top: -21px;
+}
+
+hr{
+    padding: 15px;
 }

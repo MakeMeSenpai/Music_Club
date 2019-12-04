@@ -10,26 +10,71 @@
 {# <!--defines child's block content--> #}
 {% block content %}
     {# <!-- our banner and link to quick join --> #}
-    <h1>
-        Hello from Join the band jumbotron!
-    </h1>
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-3">Welcome To The Band!</h1>
+        <p class="lead">A place to destress, learn, and jam out with friends!</p>
+    </div>
     {# <!--our navbar--> #}
-    <nav>
-        <p>Hello from our navbar!</p>
+    <nav class="nav">
+        <img id="logo" class="nav-link" src="https://cdn.imgfrog.com/i2/2019/12/04/3a002d67-7ae9-480c-b44d-710797b8efa0a64ada82f869e2e8.jpg">
+        <p class="nav-link"><a href="#about">About</a></p>
+        <p class="nav-link"><a href="#events">Events</a></p>
+        <p class="nav-link"><a href="#support">Support</a></p>
+        <p class="nav-link"><a href="#join">Join!</a></p>
     </nav>
     {# <!-- About/ History of our club --> #}
-    <h2>Hello from About!</h2>
-    <p>this is where information about us will go!</p>
+    <h2 id="about">About Us</h2>
+        <h3>Who We Are</h3>
+        <p>We are Programmers, Entrepreneurs, and Artists. We are hard workers who couldn't for the
+            life of us let music go. Some of us have never touched an instrument before in our lives.
+            While others wonder how we can even find the time. We are performers, teachers, and
+            learners. We are a group of procrastinators, and a group of good friends. But overall,
+            We are the Music club, and we aren't afraid of no carpal tunnel! If this sounds like you,
+            than come <a href="#join">join</a> us (every Music Mondays from 5:30-7pm)!</p>
+        <h3>History</h3>
+        <p>There were always music lovers who came to Make School -and even Make Games. However, Make
+            School lacked any real clubs, and for students trying to run their own clubs, it quickly
+            fell apart as the year became more and more busy. The only ones to survive this chaos was
+            the D&D Club at the time. There was a Music Club before us, however, the Music Club that
+            existed before us was a choir group, who sung songs, but rarely met. They separated after
+            the second month of school, and became smaller groups or individuals who performed on their
+            own. Then, in 2019, Anthony S. Protho founded the newest Music Club, and was dedicated to
+            making a place for music lovers to destress, learn, and jam out with friends. With the help
+            of its most dedicated members, (including Luke Harrison, Beck Haywood, Ike Holzmann, Cao
+            Mai, and Chris Barnes) they were able to get to work to make this become a reality. After
+            quickly setting up a Bake Sale for school instruments, all was thought to have failed. We
+            believed at the time that maybe this would never really happen. Until help came, from some
+            amazing staff members (including Megan Dias, Ellie MacBride, Precious Listana), who helped
+            us get our feet on the ground. Now the Music Club, with its new home in the Schools
+            Basement -originally in the Great Hall- is growing and performing at Make School events. <i>
+            "If it wasn't for the community, and the friends I had met here. Music Club would have
+            never been the way I had dreamed. Thank you all"</i> ~Ant 🐜
+    </p>
     <hr>
     {# <!-- Upcomming Events --> #}
-    <h2>Hello from Events!</h2>
-    <p>this is where info about events will go!</p>
-    <p>this is where a calander will go showing upcomming events!</p>
+    <h2 id="events">Events</h2>
+    <p>Other than our Music Monday meetings, Music Club also attends preformances and holds other events
+        such as bake sales and shows to help maintain school instruments, and get more needs for memebers
+        such as reeds or strings.
+    </p>
+    <img src="https://www.wiki-calendar.com/wp-content/uploads/2018/12/December-2019-Calendar.jpg">
     <hr>
     {# <!-- Support --> #}
-    <h2>Hello from Support!</h2>
-    <p>this is where information will go about why we need support!</p>
-    <p><a href>Click here to donate!</a></p>
+    <h2 id="support">How to Support</h2>
+    <p>By comming to shows, sharing events, and donating. You can help make Music Club a perminate club at Make
+        School! You can also help keep the club alive by being apart of us, ready to learn, teach, preform, or even
+        just destress from our accellerated program. There are many ways to support, but the simpliest way, would 
+        be to cheer us on!
+    </p>
+    <p>Click <a href="#">here</a> to donate!</p>
+    <hr>
+    {# <!-- Join! --> #}
+    <h2 id="join">Join Now!</h2>
+    <form action="/">
+        Full name: <input type="text" name="name">
+        Email: <input type="text" name="name">
+        <button type="submit">Submit!</button>
+    </form>
 {% endblock %}
 </container>
 </html>
